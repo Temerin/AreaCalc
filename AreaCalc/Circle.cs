@@ -13,7 +13,7 @@ namespace AreaCalc
         private double _perim;
         public Сircle(double rad)
         {
-            if (rad <= 0) throw new FigureExeption("Радиус должен быть больше нуля");
+            if (rad <= 0) throw new FigureExeption("Радиус должен быть больше нуля!");
             _rad = rad;
             _area = 2*3.14*_rad*_rad;
             _perim = 2*3.14*_rad;

@@ -1,17 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using AreaCalc;
 
-namespace ConsoleLoader
+namespace WindowsFormsApplication1
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Главная точка входа для приложения.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            try
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FormFigure());
+    /*      try
             {
                 List<IFigure> figure = new List<IFigure>();
                 figure.Add(new Сircle(2));
@@ -25,9 +32,7 @@ namespace ConsoleLoader
             catch (FigureExeption e)
             {
                 Console.WriteLine("{0} Exception caught.", e);
-            }
-            //System.Console.WriteLine("Hello, World!");
-            System.Console.Read(); 
+            }*/
         }
     }
 }
