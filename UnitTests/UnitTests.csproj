@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\KompasAPITest.cs" />
+    <Compile Include="Model\PlaginTest.cs" />
     <Compile Include="Model\CircleTest.cs" />
     <Compile Include="Model\RectangleTest.cs" />
     <Compile Include="Model\TriangleTest.cs" />
